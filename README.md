@@ -1,3 +1,6 @@
+HGCAL AI for Logistics & Operations
+
+
 TO BE UPDATED
 
 API key needs to be defined by doing
@@ -6,3 +9,6 @@ without the quotes
 
 do this to check API key
 echo $HOSTED_VLLM_API_KEY
+
+
+add instructions here about setting up venv
