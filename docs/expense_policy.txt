@@ -1,0 +1,6 @@
+Employees may be reimbursed for approved business expenses submitted within 30 days.
+Meal reimbursements are capped at $40 per day while traveling for business.
+All expenses over $75 require an itemized receipt, not just a card statement.
+Reimbursement requests are processed through the finance portal and paid within 10 business days.
+Personal expenses, alcohol, and entertainment are not reimbursable unless pre-approved.
+EOF

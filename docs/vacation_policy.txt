@@ -1,0 +1,6 @@
+All full-time employees accrue 15 days of paid vacation per calendar year.
+Vacation days accrue at a rate of 1.25 days per month.
+Unused vacation days may roll over up to a maximum of 5 days into the next year.
+Employees must submit vacation requests at least 2 weeks in advance through the HR portal.
+Part-time employees accrue vacation on a pro-rated basis depending on hours worked.
+EOF

@@ -1,0 +1,6 @@
+New employees are issued a laptop within their first week of starting.
+Laptops must be returned to IT within 5 business days of employment ending.
+Employees requesting additional monitors must submit a request through the IT ticketing system.
+Lost or stolen equipment must be reported to IT security within 24 hours.
+Software installations outside the approved list require manager and IT approval.
+EOF
