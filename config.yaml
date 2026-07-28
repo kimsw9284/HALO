@@ -1,0 +1,5 @@
+model_list:
+  - model_name: gpt-oss-120b
+    litellm_params:
+      model: hosted_vllm/gpt-oss:120b
+      api_base: https://vllm.fnal.gov/v1
