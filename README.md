@@ -1,8 +1,8 @@
 # HGCAL Agent for Logistics & Operations (HALO)
 
-**HALO** (**H**GCAL **A**I for **L**ogistics and **O**perations) is an AI-powered agent and Retrieval-Augmented Generation (RAG) framework designed for the Compact Muon Solenoid (CMS) High-Granularity Calorimeter (HGCAL) upgrade at CERN.
+**HALO** (**H**GCAL **A**gent for **L**ogistics and **O**perations) is an AI-powered agent and Retrieval-Augmented Generation (RAG) framework designed for the High Granularity Calorimeter upgrade for CMS detector at CERN.
 
-The system assists scientists, engineers, and technicians by providing instant answers from technical documentation and fetching real-time component tracking metadata directly from the HGCAL construction database.
+The system provides information from technical documentation and by fetching real-time component tracking metadata directly from the HGCAL construction database.
 
 ---
 
@@ -44,10 +44,10 @@ uvicorn --version
 ```
 
 ### 3. API Configuration
-The model endpoint requires an authorized API key provided by the Fermilab office.
+The model endpoint requires an authorized API key provided by the Fermilab office:
 ```bash
 # Set your API key
-export HOSTED_VLLM_API_KEY="your_api_key_here"
+export HOSTED_VLLM_API_KEY="your_api_key_here" #without quotes
 
 # Verify the environment variable is set
 echo $HOSTED_VLLM_API_KEY
@@ -66,7 +66,7 @@ INFO: Starting LiteLLM Proxy
 INFO: Running on [http://0.0.0.0:4000](http://0.0.0.0:4000)
 ```
 
-Leave this terminal running in the background. Open a second terminal window and run the following:
+Leave this terminal running in the background. Open a second terminal window and run the following to test it:
 ```bash
 # Navigate to project and activate virtual environment
 cd ~/litellm
@@ -96,14 +96,12 @@ curl http://localhost:4000/chat/completions \
 python agent_demo.py
 ```
 
-Example Usage
+*Example Usage:*
 
-Static Document Retrieval (RAG)
+Static document retrieval through RAG
 > **User:** What is a cassette and what is Fermilab's role in cassette production?  
 > **HALO:** *Queries local TF-IDF index across `docs/` and synthesizes an accurate response bounded strictly by the document context.*
 
----
-
-Live Database Lookup (HGCAPI Integration)
+Live database lookup through HGCAPI Integration)
 > **User:** Tell me about part 320EH0QH0010012  
 > **HALO:** *Detects the 15-character barcode, triggers a GET request to `https://hgcapi-cmsr.web.cern.ch/part/320EH0QH0010012/full`, and formats full part details (batch, manufacturer, QC records, version, user insertion history) into readable markdown.*
