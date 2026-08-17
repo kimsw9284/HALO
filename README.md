@@ -1,8 +1,6 @@
 # HGCAL Agent for Logistics & Operations (HALO)
 
-**HALO** (**H**GCAL **A**gent for **L**ogistics and **O**perations) is an AI-powered agent and Retrieval-Augmented Generation (RAG) framework designed for the High Granularity Calorimeter upgrade for CMS detector at CERN.
-
-The system provides information from technical documentation and by fetching real-time component tracking metadata directly from the HGCAL construction database.
+**HALO** (**H**GCAL **A**gent for **L**ogistics and **O**perations) is an AI-powered agent and Retrieval-Augmented Generation (RAG) framework designed for the High Granularity Calorimeter upgrade for CMS detector at CERN. This agent provides information from HGCAL technical documentation (when provided) and by fetching component tracking data directly from the HGCAL construction database.
 
 ---
 
@@ -44,7 +42,7 @@ uvicorn --version
 ```
 
 ### 3. API Configuration
-The model endpoint requires an authorized API key provided by the Fermilab office:
+The model endpoint requires an authorized API key provided by the Fermilab AI office:
 ```bash
 # Set your API key
 export HOSTED_VLLM_API_KEY="your_api_key_here" #without quotes
