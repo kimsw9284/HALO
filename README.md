@@ -96,12 +96,12 @@ curl http://localhost:4000/chat/completions \
 python agent_demo.py
 ```
 
-*Example Usage:*
+**Example Usage:**
 
 Static document retrieval through RAG
 > **User:** What is a cassette and what is Fermilab's role in cassette production?  
 > **HALO:** *Queries local TF-IDF index across `docs/` and synthesizes an accurate response bounded strictly by the document context.*
 
-Live database lookup through HGCAPI Integration)
+Live database lookup through HGCAPI integration
 > **User:** Tell me about part 320EH0QH0010012  
 > **HALO:** *Detects the 15-character barcode, triggers a GET request to `https://hgcapi-cmsr.web.cern.ch/part/320EH0QH0010012/full`, and formats full part details (batch, manufacturer, QC records, version, user insertion history) into readable markdown.*
